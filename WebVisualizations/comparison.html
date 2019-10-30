@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Dashboard</title>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- our own stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  
+  <body>
+
+  
+    <nav class="navbar">
+
+      <ul id="leftul">
+        <a id="websitelogo" href="index.html">
+          Lattitude
+        </a>
+      </ul>
+  
+
+      <ul id="rightul">
+        <li>
+            <a href="data.html">Data</a>
+          </li>
+  
+          <li>
+            <a href="comparison.html">Comparison</a>
+          </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn dropdown-toggle">Plots</a>
+            <div class="dropdown-content">
+              <a href="vis-lat-temp.html">Max Temperature</a>
+              <a href="vis-lat-humidity.html">Humidity</a>
+              <a href="vis-lat-cloudiness.html">Cloudiness</a>
+              <a href="vis-lat-windspeed.html">Wind Speed</a>
+            </div>
+          </li>
+
+      </ul>
+
+     
+
+    </nav>
+
+   
+    
+
+    <div class="container div-comparison">
+        <br>
+        <h3 class="header">Comparison : Latitude vs X</h3>
+
+        <hr>
+        <br>
+        <p>Click any plot to get in-depth analysis.</p>
+         <br>  
+        <div class="row">
+
+            <div class="col-md-6" id="div1">
+                    <h5>vs. Max Temperature</h5>
+                    <a href="vis-lat-temp.html">
+                    <img id="img1" src="Resources/assets/images/Fig1.png" alt="Latitude vs Max Temperature Chart" id="temp-description-image"/>
+                    </a>
+                    <br><br>
+            </div>
+            <hr class="ruler">
+            <div class="col-md-6" id="div2">
+                    <h5>vs. Humidity</h5>
+                    <a href="vis-lat-humidity.html">
+                    <img id="img2"  src="Resources/assets/images/Fig2.png" alt="Latitude vs Humidity Chart" id="temp-description-image"/>
+                    </a>
+                    <br><br>
+            </div>
+            <hr class="ruler">
+        </div>
+                
+        <div class="row">
+
+                <div class="col-md-6" id="div3">
+                        <h5>vs. Cloudiness</h5>
+                        <a href="vis-lat-cloudiness.html">
+                        <img id="img3"  src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness Chart" id="temp-description-image"/>
+                        </a>
+                        <br><br>
+                </div>
+                <hr class="ruler">
+                <div class="col-md-6" id="div4">
+                        <h5>vs. Wind Speed</h5>
+                        <a href="vis-lat-windspeed.html">
+                        <img id="img4"  src="Resources/assets/images/Fig4.png" alt="Latitude vs Wind Speed Chart" id="temp-description-image"/>
+                        </a>
+                        <br><br>
+                </div>
+                
+        </div>
+    
+    </div>
+
+      
+
+
+  
+  </body>
+
+</html>
