@@ -11,7 +11,7 @@ body{
   }
   
   .navbar-2{
-    visibility: hidden;
+    display: none;
   }
 
   #websitelogo{
@@ -143,9 +143,11 @@ li a:hover, .dropdown:hover .dropbtn {
       color: rgb(85, 72, 72);
   }
 
+  .navtoggler{
+    display: none;
+  }
 
-
-
+  
 /* small screen changes */
 
 @media (max-width: 580px) {
@@ -180,7 +182,7 @@ li a:hover, .dropdown:hover .dropbtn {
   .navbar {
       padding: 20px;
       background: teal;
-
+      
     }  
 
   #websitelogo{
@@ -195,13 +197,26 @@ li a:hover, .dropdown:hover .dropbtn {
     }
 
   .navbar-2{
-      visibility: hidden;
+      display: none;;
     }
 
   .ruler{
     visibility: visible;
   }
 
+
+  /*.navbar{
+    display: none;
+  }*/
+
+  .pos-f-t{
+    display: block;
+  }
+
+  .navtoggler{
+    display: block;
+    
+  }
 } /*Media Query End */
   
 
@@ -219,7 +234,10 @@ li a:hover, .dropdown:hover .dropbtn {
       height: 250px;
     }
 
-  
+     .pos-f-t{
+    display: block;
+  }
+
 }
 
 
@@ -292,4 +310,40 @@ h5{
 
 .ruler{
   visibility: hidden;
+}
+
+.div-data-table{
+  margin: 50px;
+  
+}
+
+.div-data{
+padding: 0px;
+
+}
+
+.div-data-table  {
+ 
+  background-color: white; 
+  }
+
+
+.div-data h3{
+  margin: 50px;
+  padding: 0px;
+}
+
+.div-data p{ 
+  margin: 0px 35px;
+  
+}
+
+.div-data hr{
+  margin: 0px 35px;
+}
+
+
+
+.pos-f-t{
+  display: none;
 }

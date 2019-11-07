@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 
+  <!-- Start of Head -->
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Web Visualization Dashboard</title>
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,44 +15,66 @@
 
   </head>
   
+  <!-- Start of Body -->
   <body>
 
-  
+    <!-- Start of navbar -->
     <nav class="navbar">
+      <div class="container-fluid navbar-custom">
 
-      <ul id="leftul">
-        <a id="websitelogo" href="index.html">
-          Lattitude
-        </a>
-      </ul>
-  
+        <ul id="leftul">
+          <a id="websitelogo" href="index.html">
+            Lattitude
+          </a>
+        </ul>
 
-      <ul id="rightul">
-        <li>
-          <a href="data.html">Data</a>
-        </li>
 
-        <li>
-          <a href="comparison.html">Comparison</a>
-        </li>
+        <ul id="rightul">
+          <li>
+            <a href="data.html">Data</a>
+          </li>
 
-        <li class="dropdown">
-          <a href="#" class="dropbtn dropdown-toggle">Plots</a>
-          <div class="dropdown-content">
-            <a href="vis-lat-temp.html">Max Temperature</a>
-            <a href="vis-lat-humidity.html">Humidity</a>
-            <a href="vis-lat-cloudiness.html">Cloudiness</a>
-            <a href="vis-lat-windspeed.html">Wind Speed</a>
-          </div>
-        </li>
+          <li>
+            <a href="comparison.html">Comparison</a>
+          </li>
 
-      </ul>
+          <li class="dropdown">
+            <a href="#" class="dropbtn dropdown-toggle">Plots</a>
+            <div class="dropdown-content">
+              <a href="vis-lat-temp.html">Max Temperature</a>
+              <a href="vis-lat-humidity.html">Humidity</a>
+              <a href="vis-lat-cloudiness.html">Cloudiness</a>
+              <a href="vis-lat-windspeed.html">Wind Speed</a>
+            </div>
+          </li>
 
+        </ul>
+
+        <button class="navbar-toggler navtoggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        
+      </div>  
      
-
     </nav>
 
-   
+    <div class="pos-f-t">
+      
+        <nav class="navbar navbar-light" style="background-color: teal;">
+                <ul id="leftul">
+                        <a id="websitelogo" href="index.html">
+                          Lattitude
+                        </a>
+                </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </nav>
+       
+    </div>
+    <!-- End of navbar -->
+  
     
 
     <div class="container">
@@ -74,8 +100,8 @@
   
         <div class="right">
             <br>
-            <h3 class="header">Visualizations</h3>
-            
+            <h3 class="header">Visualizations</h3>  
+          
             <hr>
             <br>
             <div class="images-class">
@@ -100,9 +126,6 @@
     </div>
 
       
-
-
-  
   </body>
 
 </html>
