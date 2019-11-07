@@ -5,17 +5,27 @@ body{
 
 /* Giving our navbar some padding and a background color */
   .navbar {
-    padding: 15px;
+    padding:0;
     background: white;
-
+    
   }
   
+
+  .ddm{
+    background-color: whitesmoke;
+    
+  }
+
+  .dpm a{
+    margin-left:0px;
+  }
+
   .navbar-2{
     display: none;
   }
 
   #websitelogo{
-      padding: 20px;
+      padding: 15px;
       margin-left: 110px;
       background-color: teal;
       color: white;
@@ -23,6 +33,7 @@ body{
       font-family: 'Times New Roman', Times, serif;
       font-weight: bold;
       text-decoration: none;
+      
   }
 
   ul {
@@ -216,6 +227,7 @@ li a:hover, .dropdown:hover .dropbtn {
   .navtoggler{
     display: block;
     
+   
   }
 } /*Media Query End */
   
@@ -237,6 +249,8 @@ li a:hover, .dropdown:hover .dropbtn {
      .pos-f-t{
     display: block;
   }
+
+ 
 
 }
 
